@@ -18,7 +18,7 @@ export default function Login({ navigation }) {
         />
         <EntradaTexto label="Senha" placeholder="Insira sua senha" />
       </Box>
-      <Botao onPress={() => navigation.navigate("Cadastro")}>Entrar</Botao>
+      <Botao onPress={() => navigation.navigate("Tabs")}>Entrar</Botao>
 
       <Link href="https://www.alura.com.br" mt={2}>
         Esqueceu sua senha?
@@ -26,7 +26,7 @@ export default function Login({ navigation }) {
 
       <Box w="100%" flexDirection="row" justifyContent="center" mt={8}>
         <Text>Ainda não tem cadastro? </Text>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Cadastro")}>
           <Text color="blue.500">Faça seu cadastro</Text>
         </TouchableOpacity>
       </Box>
