@@ -15,5 +15,5 @@ export interface Paciente {
     rua: string;
     numero: number;
     complemento?: string;
-    estado: string;
+    estado?: string;
   }
