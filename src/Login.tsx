@@ -7,7 +7,7 @@ import { Titulo } from "./componentes/Titulo";
 import { useEffect, useState } from "react";
 import { fazerLogin } from "./servicos/AutenticacaoServico";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { jwtDecode } from "jwt-decode";
+import  jwtDecode  from "jwt-decode";
 import "core-js/stable/atob";
 
 export default function Login({ navigation }: any) {
@@ -32,6 +32,8 @@ export default function Login({ navigation }: any) {
     if (resultado) {
       const { token } = resultado;
       AsyncStorage.setItem("token", token);
+      console.log(resultado);
+      
 
       const tokenDecodificado = jwtDecode(token) as any;
       const pacienteId = tokenDecodificado.id;

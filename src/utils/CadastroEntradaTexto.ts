@@ -27,20 +27,20 @@ const secoes = [
         label: 'Confirme sua senha',
         placeholder: 'Insira sua senha',
         secureTextEntry: true,
-        name: 'confirmarSenha'
+        name: 'confirmaSenha'
       },
       {
         id: 5,
         label: 'CPF',
-        placeholder: 'Insira seu CPF',        
+        placeholder: 'Insira seu CPF',
         name: 'cpf'
       },
       {
         id: 6,
         label: 'Foto de perfil',
-        placeholder: 'Link da foto',        
+        placeholder: 'Link da foto',
         name: 'imagem'
-      },
+      }
     ],
     checkbox: []
   },
@@ -59,7 +59,6 @@ const secoes = [
         label: 'Rua',
         placeholder: 'Nome da rua',
         name: 'rua'
-
       },
       {
         id: 3,
@@ -82,7 +81,7 @@ const secoes = [
       {
         id: 6,
         label: 'Estado',
-        placeholder: 'Seu estado',
+        placeholder: 'Seu Estado',
         name: 'estado'
       },
     ],
